@@ -1,0 +1,94 @@
+/**
+ * action types
+ */
+
+// action types for language
+export const SET_LANGUAGE = 'SET_LANGUAGE';
+export const SET_IS_LOADING_I18NEXT_CONFIGS = 'SET_IS_LOADING_I18NEXT_CONFIGS';
+export const SET_IS_LOADING_FIREBASE_REMOTE_CONFIGS =
+  'SET_IS_LOADING_FIREBASE_REMOTE_CONFIGS';
+
+// action types for appearance
+export const CHANGE_THEME = 'CHANGE_THEME';
+export const CHANGE_FONT = 'CHANGE_FONT';
+export const FORCE_APPEARANCE = 'FORCE_APPEARANCE';
+
+// action types for application
+export const IS_LOADING_AUTH_STATE = 'IS_LOADING_AUTH_STATE';
+export const IS_AUTHENTICATED_STATE = 'IS_AUTHENTICATED_STATE';
+export const IS_LOGGED_IN = 'IS_LOGGED_IN';
+export const LOGGED_USER = 'LGGED_USER';
+export const AUTHENTICATED_STATE = 'AUTHENTICATED_STATE';
+export const IS_FIRST_TIME = 'IS_FIRST_TIME';
+export const IS_DEEP_LINK_HANDLED = 'IS_DEEP_LINK_HANDLED';
+export const HAS_TO_REGISTER_STORE = 'HAS_TO_REGISTER_STORE';
+export const IS_FROM_SETTING = 'IS_FROM_SETTING';
+
+// action types for users
+export const SET_USER_PROFILE_DETAILS = 'SET_USER_PROFILE_DETAILS';
+export const SET_CURRENT_USER = 'SET_CURRENT_USER';
+export const SET_USER_LOGIN_DETAILS = 'SET_USER_LOGIN_DETAILS';
+export const SET_USER_FORGET_DETAILS = 'SET_USER_FORGET_DETAILS';
+export const SET_FORGET_TOKEN = 'SET_FORGET_TOKEN';
+export const SET_FULLNAME_TOKEN = 'SET_FULLNAME_TOKEN';
+export const DEEP_LINK_TYPE = 'DEEP_LINK_TYPE';
+export const STORE_REGISTRATION_DATA = 'STORE_REGISTRATION_DATA';
+export const TEMP_EMAIL_FOR_DEEP_LINK = 'TEMP_EMAIL_FOR_DEEP_LINK';
+export const TEMP_TOKEN_FOR_CHANGE_BUSNISEMAIL =
+  'TEMP_TOKEN_FOR_CHANGE_BUSNISEMAIL';
+
+// actions for filters of tx activity screen
+export const TOKEN_KIND_FILTER_TX = 'TOKEN_KIND_FILTER_TX';
+export const TRANSFER_PERPOSE_FILTER_TX = 'TRANSFER_PERPOSE_FILTER_TX';
+export const PERIOD_FILTER_TX = 'PERIOD_FILTER_TX';
+
+// actions for filters of affiliated store screen
+export const REWARD_PERIOD_FILTER_STORE = 'rewardperiodfilterstore';
+export const REWARD_AMOUNT_FILTER_STORE = 'rewardamountfilterstore';
+
+// actions for auth
+export const IS_OTP_VERIFIED = 'IS_OTP_VERIFIED';
+export const IS_PASSCODE_CONFIRMED = 'IS_PASSCODE_CONFIRMED';
+export const IS_VALID_USER_ABOUT_INFORMATION =
+  'IS_VALID_USER_ABOUT_INFORMATION';
+export const IS_EMAIL_VERIFIED = 'IS_EMAIL_VERIFIED';
+export const INITIAL_ROUTE = 'INITIAL_ROUTE';
+export const IS_ALL_INFO_AQUIRED = 'IS_ALL_INFO_AQUIRED';
+export const IS_SIGNUP_COMPLETE = 'IS_SIGNUP_COMPLETE';
+export const SIGNUP_COMPLETE_CODE = 'SIGNUP_COMPLETE_CODE';
+export const INVITE_CODE_SCREEN = 'INVITE_CODE_SCREEN';
+
+// actions for navigation Routes
+export const SET_PARENT_ROUTE_FOR_OTP_NAVIGATION =
+  'SET_PARENT_ROUTE_FOR_OTP_NAVIGATION';
+export const SET_PARENT_ROUTE_FOR_CREATE_PASSCODE =
+  'SET_PARENT_ROUTE_FOR_CREATE_PASSCODE';
+
+// actions for store registartion
+export const IS_STORE_EXISTS_FOR_LOGGEDIN_USER =
+  'IS_STORE_EXISTS_FOR_LOGGEDIN_USER';
+export const SET_STORE_REGISTRATION_DETAILS = 'SET_STORE_REGISTRATION_DETAILS';
+export const SET_STORE_DEEPLINK = 'SET_STORE_DEEPLINK';
+export const UPLOADE_IMAGES_ARRAY = 'UPLOADE_IMAGES_ARRAY';
+export const ERROR_CREATING_STORE = 'ERROR_CREATING_STOREx';
+export const SET_STORE_DATA = 'SET_STORE_DATA';
+
+// ations for general
+export const IS_USER_LOGGING_IN_FOR_FIRST = 'IS_USER_LOGGING_IN_FOR_FIRST';
+export const USER_FOUND_ON_DEVICE = 'USER_FOUND_ON_DEVICE';
+export const DEEP_LINK_HANDLER = 'DEEP_LINK_HANDLER';
+export const IS_INVITE_DEEP_LINK = 'IS_INVITE_DEEP_LINK';
+export const ID_VERIFICATION_DATA = 'ID_VERIFICATION_DATA';
+
+// ations for logout_status
+export const IS_USER_LOGGED_OUT = 'IS_USER_LOGGED_OUT';
+
+// actions for wallets
+export const CURRENT_USER_WALLETS = 'CURRENT_USER_WALLETS';
+export const DELI_DEV_WALLET = 'DELI_DEV_WALLET';
+export const DEPOINT_WALLET = 'DEPOINT_WALLET';
+export const KLAY_WALLET = 'KLAY_WALLET';
+export const SWAP_RESPONSE = 'SWAP_RESPONSE';
+
+// actions for notifications
+export const SET_NOTIFICATION_COUNT = 'GET_NOTIFICATION_COUNT';
