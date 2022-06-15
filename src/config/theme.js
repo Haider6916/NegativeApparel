@@ -241,7 +241,7 @@ export const DefaultFont = "ProximaNova";
  * export font for application
  * @returns font
  */
-export const useFont = () => {
-  const font = useSelector((state) => state.application.font);
-  return font ?? DefaultFont;
-};
+// export const useFont = () => {
+//   const font = useSelector((state) => state.application.font);
+//   return font ?? DefaultFont;
+// };
