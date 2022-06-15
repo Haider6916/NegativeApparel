@@ -1,6 +1,6 @@
 // import { BaseColor, useFont, useTheme } from '../../config/theme';
 import { FontWeight, Typography } from "../../config/typography";
-import { BaseColor, useFont } from '../../config/theme'
+import { BaseColor } from '../../config/theme'
 import PropTypes from "prop-types";
 import React from "react";
 import { StyleSheet, Text } from "react-native";
@@ -106,7 +106,7 @@ export default function Index(props) {
   } = props;
 
   // const { colors } = useTheme();
-  const font = useFont();
+  // const font = useFont();
 
   let textStyle = StyleSheet.flatten([
     header && Typography.header,
@@ -143,7 +143,8 @@ export default function Index(props) {
     dividerColor && { color: BaseColor.dividerColor },
     whiteColor && { color: BaseColor.whiteColor },
     fieldColor && { color: BaseColor.fieldColor },
-    { fontFamily: font, textAlign },
+    { //fontFamily: font,
+       textAlign },
     style && style,
   ]);
 
