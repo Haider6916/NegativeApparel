@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { useDarkMode } from "react-native-dark-mode";
+// import { useDarkMode } from "react-native-dark-mode";
 
 /**
  * Define Const color use for whole application
@@ -219,23 +219,23 @@ export const DefaultFont = "ProximaNova";
  * export theme and colors for application
  * @returns theme,colors
  */
-export const useTheme = () => {
-  const isDarkMode = useDarkMode();
-  const forceDark = useSelector((state) => state.application.force_dark);
-  const themeStorage = useSelector((state) => state.application.theme);
-  const listTheme = ThemeSupport.filter((item) => item.theme == themeStorage);
-  const theme = listTheme.length > 0 ? listTheme[0] : DefaultTheme;
+// export const useTheme = () => {
+  // const isDarkMode = useDarkMode();
+  // const forceDark = useSelector((state) => state.application.force_dark);
+  // const themeStorage = useSelector((state) => state.application.theme);
+  // const listTheme = ThemeSupport.filter((item) => item.theme == themeStorage);
+  // const theme = listTheme.length > 0 ? listTheme[0] : DefaultTheme;
 
-  if (forceDark) {
-    return { theme: theme.dark, colors: theme.dark.colors };
-  }
-  if (forceDark == false) {
-    return { theme: theme.light, colors: theme.light.colors };
-  }
-  return isDarkMode
-    ? { theme: theme.dark, colors: theme.dark.colors }
-    : { theme: theme.light, colors: theme.light.colors };
-};
+  // if (forceDark) {
+  //   return { theme: theme.dark, colors: theme.dark.colors };
+  // }
+  // if (forceDark == false) {
+  //   return { theme: theme.light, colors: theme.light.colors };
+  // }
+  // return isDarkMode
+  //   ? { theme: theme.dark, colors: theme.dark.colors }
+  //   : { theme: theme.light, colors: theme.light.colors };
+// };
 
 /**
  * export font for application
