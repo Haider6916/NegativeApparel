@@ -1,6 +1,6 @@
 // import { BaseColor, useFont, useTheme } from '../../config/theme';
 import { FontWeight, Typography } from "../../config/typography";
-import { BaseColor, useTheme, useFont } from '../../config/theme'
+import { BaseColor, useFont } from '../../config/theme'
 import PropTypes from "prop-types";
 import React from "react";
 import { StyleSheet, Text } from "react-native";
@@ -105,7 +105,7 @@ export default function Index(props) {
     children,
   } = props;
 
-  const { colors } = useTheme();
+  // const { colors } = useTheme();
   const font = useFont();
 
   let textStyle = StyleSheet.flatten([
@@ -133,12 +133,12 @@ export default function Index(props) {
     heavy && { fontWeight: FontWeight.heavy },
     black && { fontWeight: FontWeight.black },
     // default color
-    { color: colors.text },
+    // { color: colors.text },
     //custom for color
-    primaryColor && { color: colors.primary },
-    darkPrimaryColor && { color: colors.primaryDark },
-    lightPrimaryColor && { color: colors.primaryLight },
-    accentColor && { color: colors.accent },
+    // primaryColor && { color: colors.primary },
+    // darkPrimaryColor && { color: colors.primaryDark },
+    // lightPrimaryColor && { color: colors.primaryLight },
+    // accentColor && { color: colors.accent },
     grayColor && { color: BaseColor.grayColor },
     dividerColor && { color: BaseColor.dividerColor },
     whiteColor && { color: BaseColor.whiteColor },
